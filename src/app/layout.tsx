@@ -24,12 +24,28 @@ export default function RootLayout({
       <body
         className={`flex flex-col min-h-screen ${pixel.className}`}
       >
+       
+      <div className="area">
+        <ul className="circles">
+          <li><img style={{ opacity: 0.1 }} src="/space-invaders-1.svg" /></li>
+          <li><img style={{ opacity: 0.1 }} src="/space-invaders-1.svg" /></li>
+          <li><img style={{ opacity: 0.1 }} src="/space-invaders-1.svg" /></li>
+          <li><img style={{ opacity: 0.1 }} src="/space-invaders-1.svg" /></li>
+          <li><img style={{ opacity: 0.1 }} src="/space-invaders-1.svg" /></li>
+          <li><img style={{ opacity: 0.1 }} src="/space-invaders-1.svg" /></li>
+          <li><img style={{ opacity: 0.1 }} src="/space-invaders-1.svg" /></li>
+          <li><img style={{ opacity: 0.1 }} src="/space-invaders-1.svg" /></li>
+          <li><img style={{ opacity: 0.1 }} src="/space-invaders-1.svg" /></li>
+          <li><img style={{ opacity: 0.1 }} src="/space-invaders-1.svg" /></li>
+        </ul>
+      </div>
+
         <Header/>
         <PageTransition>
         {children}
         </PageTransition>
 
-      <Footer/>
+        <Footer/>
       </body>
     </html>
   );

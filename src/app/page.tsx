@@ -46,7 +46,7 @@ export default function Home() {
               </h2>
             </motion.div>
             <Image 
-              src="/IMG_2784.jpeg"
+              src="/IMG_2784.png"
               alt="image"
               width={200}
               height={200}
