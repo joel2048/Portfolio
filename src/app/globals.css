@@ -14,8 +14,20 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #272727;
     --foreground: #ededed;
+  }
+}
+
+@layer components {
+  .intro-container {
+    @apply max-w-6xl sm:justify-center sm:mx-auto sm:px-6;
+  }
+}
+
+@layer components {
+  .about-container {
+    @apply max-w-2xl mx-auto px-6;
   }
 }
 
@@ -23,4 +35,33 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.vsc,
+.extensions {
+  color: #56ace6;
+  text-decoration: underline;
+}
+.lang {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ionicon {
+  color: white;
+}
+
+
+@media (min-width: 454px) and (max-width: 873px) {
+  .intro-container {
+    margin-left: 55px;
+    margin-right: 55px;
+  }
+}
+
+@media (max-width: 454px) {
+  .intro-container {
+    padding: 0 0rem;
+  }
 }
